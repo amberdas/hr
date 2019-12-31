@@ -1,0 +1,1 @@
+INSERT INTO company.cmpny (idcmpny, name) VALUES ('a1', 'abc');
