@@ -1,8 +1,6 @@
 package com.org.company.hr.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Amber on 22-12-2019.
@@ -12,9 +10,10 @@ import javax.persistence.Table;
 public class Employee
 {
     @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
     private String name;
-    private long salary;
+    private Long salary;
 
 
     public long getId() {
@@ -35,11 +34,11 @@ public class Employee
     }
 
 
-    public long getSalary() {
+    public Long getSalary() {
         return salary;
     }
 
-    public void setSalary(long salary) {
+    public void setSalary(Long salary) {
         this.salary = salary;
     }
 }

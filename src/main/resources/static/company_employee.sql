@@ -1,3 +1,15 @@
+ALTER TABLE company.employee ADD PRIMARY KEY (id);
+ALTER TABLE employee MODIFY COLUMN id INT auto_increment;
+ALTER TABLE employee AUTO_INCREMENT = 112;
+create table employee
+(
+	id int not null auto_increment
+		primary key,
+	name varchar(100) null,
+	salary int(10) null
+);
+
+
 INSERT INTO company.employee (id, name, salary) VALUES (102, 'Amit', 50000);
 INSERT INTO company.employee (id, name, salary) VALUES (101, 'Deepak', 45000);
 INSERT INTO company.employee (id, name, salary) VALUES (103, 'Amber', 40000);
