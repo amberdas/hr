@@ -1,6 +1,6 @@
 # hr Operation Application
 Sample Spring boot Application for Crud Operation
-- Prerequisite Run in your local:
+- Prerequisite Run in local:
 1. Java 8
 2. MySQL
 3. Run all sql files from DDL directory. Path: src\main\resources\ddl 
